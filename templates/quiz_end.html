@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <br><br><br><br>
+        {% if correct_answers >= 3 %}
+        
+            <h1 class="text-success"><strong>Great Job!</strong></h1>
+            <h2 class="text-success">You got {{ correct_answers }}/5 answers correct!</h2>
+        {% else %}
+            <h2>Nice! You got {{ correct_answers }}/5 answers correct.</h2>
+        {% endif %}
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="text-center">
+        <a href="{{ url_for('quiz_start') }}" class="btn btn-primary quiz-button">Try Again</a>
+        <a href="/" class="btn btn-primary quiz-button">Back to Dashboard</a>
+    </div>
+</div>
+{% endblock %}
+
+
+

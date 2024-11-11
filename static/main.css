@@ -1,0 +1,228 @@
+
+#salesRecords div:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-item{
+    color: black;
+}
+
+.navbar-brand {
+    color: black;
+    font-size: 24px; 
+    /* font-weight: bold;  */
+
+}
+.background-col{
+    background-color:rgb(211, 223, 226);
+    margin-top: 0px;
+    min-height: 100%;
+    padding-top:30px;
+    padding-bottom:30px;
+    min-height: 100vh;
+}
+
+.container-fluid{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar-light{
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+}
+
+.card-img-top {
+    object-fit: cover;  
+    width: 100%;  /* Ensure the image takes the full width of the container */
+    height: 200px;  /* Set a fixed height for the container, adjust as needed */
+}
+
+.button_color{
+    background-color: rgb(45, 87, 8);
+    
+}
+
+area {
+    display: inline-block;
+  }
+
+
+.highlighted {
+    background-color: rgba(255, 0, 0, 0.5); 
+
+}
+
+.card{
+    height:330px;
+    border-radius:10px;
+    margin-bottom: 20px;
+}
+
+
+.main-text{
+    font-size: 40px;
+}
+
+.main-page{
+    text-align: center;
+}
+.main-page img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:35%;
+}
+
+.title{
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    /* font-weight: bold; */
+    /* border-top-right-radius:10px;
+    border-top-left-radius:10px; */
+    
+}
+
+.center-text{
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: rgb(81, 103, 115);
+    border-color: rgb(81, 103, 115);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-dark-grey{
+    color: rgb(89, 89, 89);
+}
+
+.padding-top-large{
+    padding-top: 100px;
+}
+.padding-bottom-medium{
+    padding-bottom: 60px;
+}
+
+.accent{
+    color: rgb(81, 103, 115);
+}
+
+
+.lesson img{
+    padding:8px;
+    width: 100%;
+}
+
+.img-container{
+    height: fit-content;
+}
+
+.lesson{
+    background-color: white;
+    border-radius: 12px;
+    margin: 12px;
+    padding: 24px;
+}
+
+map {
+    position: relative;
+}
+
+.vocab-word{
+    text-decoration: underline;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.tooltip:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip:hover:before {
+    opacity: 1;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.option-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.option {
+    text-align: center;
+}
+
+.option img {
+    max-width: 250px;
+}
+
+.btn {
+    margin-top: 20px; /* Add margin-top to space out the button */
+}
+
+.question-id-font{
+    font-size: 24px;
+    margin: 10px;
+}
+
+.quiz-button {
+    height: 100px;
+    width: 200px; /* Adjust button width as needed */
+    margin: 10px; /* Add a small margin between buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-button span {
+    display: inline-block; /* Ensure text is treated as a block element */
+    vertical-align: middle; /* Vertically align text within the button */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Optional: Centers vertically as well */
+}
+
+.footer-buttons {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: #f8f9fa; Optional: Change background color as needed */
+    padding: 10px; /* Optional: Add padding for better appearance */
+    z-index: 1000; /* Optional: Adjust z-index if needed to ensure it's above other content */
+}

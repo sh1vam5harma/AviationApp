@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12 main-page">
+        <h1 class="main-text">Welcome to Flying 101!</h1>
+        <p>Click on an instrument or click Start Learning</p>
+        
+        <img src="https://cdn.shopify.com/s/files/1/2773/1296/files/Six_Pack_Instruments_-_Pilot_Mall.png?v=1700254141" alt="Flight Deck" usemap="#flightdeckmap">
+        <map name="flightdeckmap">
+            <area shape="rect" coords="0,0,163,184" href="{{ url_for('learn', lesson_id=1) }}" alt="Airspeed Indicator" title="Airspeed Indicator">
+            <area shape="rect" coords="163,0,327,184" href="{{ url_for('learn', lesson_id=2) }}" alt="Attitude Indicator" title="Attitude Indicator">
+            <area shape="rect" coords="327,0,500,184" href="{{ url_for('learn', lesson_id=3) }}" alt="Altimeter" title="Altimeter">
+            <area shape="rect" coords="0,184,163,307" href="{{ url_for('learn', lesson_id=4) }}" alt="Turn Coordinator" title="Turn Coordinator">
+            <area shape="rect" coords="163,184,327,307" href="{{ url_for('learn', lesson_id=5) }}" alt="Heading Indicator" title="Heading Indicator">
+            <area shape="rect" coords="327,184,500,307" href="{{ url_for('learn', lesson_id=6) }}" alt="Vertical Speed Indicator" title="Vertical Speed Indicator">
+        </map>
+        <div class="hover-box"></div>
+    </div>
+    <div class="col text-center mt-3">
+        <a href="{{ url_for('learn', lesson_id=1) }}" class="btn btn-primary">Start Learning</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+{% endblock %}

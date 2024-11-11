@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-12 center-text">
+        <h1 class="text-dark-grey padding-top-large padding-bottom-medium">Ready to test what you have learned?</h1>
+        <a href="{{ url_for('quiz', question_id=1) }}" class="btn btn-primary ">Start quiz</a>
+    </div>
+    
+</div>
+
+
+
+{% endblock %}

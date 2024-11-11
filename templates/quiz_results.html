@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<!-- <div class="row">
+    <div class="col-md-12">
+        {% if result == 'correct' %}
+            <h1>Correct Answer!</h1>
+        {% elif result == 'incorrect' %}
+            <h1>Incorrect Answer!</h1>
+            <p>{{ explanation }}</p>
+        {% endif %}
+        {% if next_question_id %}
+            <a href="{{ url_for('quiz', question_id=next_question_id) }}" class="btn btn-primary">Next Question</a>
+        {% else %}
+            <a href="{{ url_for('quiz_end')}}" class="btn btn-primary">Finish!</a>
+        {% endif %}
+    </div>
+</div> -->
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        {% if result == 'correct' %}
+            <h1 class="text-success">Correct Answer!</h1>
+        {% elif result == 'incorrect' %}
+            <h1 class="text-danger">Incorrect Answer!</h1>
+            <p class="mt-3">{{ explanation }}</p>
+        {% endif %}
+        <div class="mt-4">
+            {% if next_question_id %}
+                <a href="{{ url_for('quiz', question_id=next_question_id) }}" class="btn btn-primary">Next Question</a>
+            {% else %}
+                <a href="{{ url_for('quiz_end')}}" class="btn btn-primary">Finish!</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+

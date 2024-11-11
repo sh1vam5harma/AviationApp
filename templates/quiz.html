@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<!-- <div class="row">
+    <div class="col-md-12">
+        <div class="question-id-font">Question {{ question_id }}</div>
+    </div>
+</div> -->
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="question-id-font">{{ question.question }}</div>
+        <form id="quiz-form" action="/quiz/{{ question_id }}" method="POST">
+            <div class="option-grid">
+                {% for option in question.options %}
+                <label class="option">
+                    <input type="radio" id="{{ option.text }}" name="answer" value="{{ option.text }}" required>
+                    <img src="{{ option.image }}" alt="{{ option.text }}">
+                </label>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+
